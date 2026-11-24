@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact & réseaux — Alex Martin</title>
+<meta name="description" content="Contact : email, téléphone, formulaire de message et lien vers tous les réseaux.">
+<meta name="theme-color" content="#050805">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/JetBrainsMonoNL-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="top">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="index.html" aria-label="Alex Martin — accueil">ALEX MARTIN<span class="us">_</span></a>
+    <span class="fill" aria-hidden="true"></span>
+    <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html"><span class="num">01</span>Accueil</a>
+        <a href="projets.html"><span class="num">02</span>Projets</a>
+        <a href="veille.html"><span class="num">03</span>Veille</a>
+        <a href="interets.html"><span class="num">04</span>Intérêts</a>
+        <a href="contact.html" aria-current="page"><span class="num">05</span>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="sheet">
+  <main id="contenu">
+    <h1 class="page-title"><span class="pfx" aria-hidden="true">//</span><span>Contact &amp; réseaux</span><span class="fill dbl" aria-hidden="true"></span></h1>
+    <p class="kicker">Pour échanger ou poser une question : écrivez-moi, je réponds dès que possible.</p>
+
+    <section class="split" aria-labelledby="coord">
+      <div class="side"><h2 id="coord"><span class="n">01</span><span class="t">Coordonnées</span></h2><p>Me joindre directement</p></div>
+      <div class="body">
+        <dl class="kv" style="margin-top:0">
+          <div><dt>Email</dt><dd><a href="mailto:alex.martin@exemple.fr">alex.martin@exemple.fr</a> <button type="button" class="btn small alt" data-copy="alex.martin@exemple.fr">Copier</button></dd></div>
+          <div><dt>Téléphone</dt><dd><a href="tel:+33600000000">06 00 00 00 00</a></dd></div>
+          <div><dt>Localisation</dt><dd><span class="redact">██████████</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="split" aria-labelledby="message">
+      <div class="side"><h2 id="message"><span class="n">02</span><span class="t">Message</span></h2><p>Écrire depuis le site</p></div>
+      <div class="body">
+        <form class="form" id="contact-form" action="#" method="post" data-demo data-fallback="alex.martin@exemple.fr">
+          <input type="hidden" name="_subject" value="Message depuis le portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div><label class="l" for="f-nom">Nom</label><input id="f-nom" name="name" type="text" required autocomplete="name"></div>
+          <div><label class="l" for="f-mail">Email</label><input id="f-mail" name="email" type="email" required autocomplete="email"></div>
+          <div class="full"><label class="l" for="f-tel">Téléphone <span class="opt">(facultatif)</span></label><input id="f-tel" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="full"><label class="l" for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+          <label class="check full"><input type="checkbox" name="consent" value="oui" required><span>J'accepte que ces informations soient utilisées pour me répondre. <a href="rgpd.html#donnees">En savoir plus</a></span></label>
+          <div class="full"><button type="submit" class="btn">Envoyer le message <span aria-hidden="true">▸</span></button></div>
+          <p class="form-status full" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="split" aria-labelledby="reseaux">
+      <div class="side"><h2 id="reseaux"><span class="n">03</span><span class="t">Réseaux</span></h2><p>Tous mes liens</p></div>
+      <div class="body">
+        <p style="max-width:62ch;color:var(--text2)">Tous mes réseaux sont regroupés sur une seule page.</p>
+        <div class="actions" style="margin-top:1.4rem">
+          <a class="btn big-link" href="#">Voir tous mes réseaux <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="url"><span class="redact">██████.bio/██████</span> (lien masqué dans cette version)</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="row"><span class="fill dbl" aria-hidden="true"></span><span class="lbl">CRÉDITS</span><span class="fill dbl" aria-hidden="true"></span></div>
+    <dl class="kv">
+      <div><dt>Conception &amp; contenu</dt><dd>Alex Martin</dd></div>
+      <div><dt>Police</dt><dd><a href="https://www.jetbrains.com/lp/mono/" rel="noopener">JetBrains Mono</a> (licence OFL 1.1)</dd></div>
+      <div><dt>Art ASCII du nom</dt><dd><a href="https://github.com/cmatsuoka/figlet" rel="noopener">figlet</a>, police « ANSI Regular »</dd></div>
+      <div><dt>Technologies</dt><dd>HTML, CSS, JavaScript — sans framework</dd></div>
+      <div><dt>Hébergement</dt><dd>GitHub Pages</dd></div>
+    </dl>
+    <div class="bottom">
+      <span>© 2026 Alex Martin — BTS SIO option SISR</span>
+      <span class="links">
+        <a class="btn small alt" href="rgpd.html">RGPD &amp; mentions légales</a>
+        <a href="#top">↑ haut de page</a>
+      </span>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

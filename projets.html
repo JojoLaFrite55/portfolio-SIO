@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets — Alex Martin</title>
+<meta name="description" content="Projets : infrastructure d'entreprise (école), jeux vidéo et IA, infrastructure à la maison, et chaque brique en détail.">
+<meta name="theme-color" content="#050805">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/JetBrainsMonoNL-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="top">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="index.html" aria-label="Alex Martin — accueil">ALEX MARTIN<span class="us">_</span></a>
+    <span class="fill" aria-hidden="true"></span>
+    <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html"><span class="num">01</span>Accueil</a>
+        <a href="projets.html" aria-current="page"><span class="num">02</span>Projets</a>
+        <a href="veille.html"><span class="num">03</span>Veille</a>
+        <a href="interets.html"><span class="num">04</span>Intérêts</a>
+        <a href="contact.html"><span class="num">05</span>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="sheet">
+  <main id="contenu">
+    <h1 class="page-title"><span class="pfx" aria-hidden="true">//</span><span>Projets</span><span class="fill dbl" aria-hidden="true"></span></h1>
+    <p class="kicker">Mes projets : cliquez sur l'un d'eux pour le voir en détail.</p>
+
+    <div class="car-bar">
+      <span class="car-count" aria-live="polite"><b data-car-i>01</b> / 03</span>
+      <span class="car-btns">
+        <button type="button" class="btn small alt" data-car="-1" aria-label="Projets précédents">◂</button>
+        <button type="button" class="btn small alt" data-car="1" aria-label="Projets suivants">▸</button>
+      </span>
+    </div>
+    <ul class="carousel" data-carousel tabindex="0" aria-label="Liste des projets">
+          <li><button type="button" class="pcard" data-open="pj-1" aria-haspopup="dialog" style="--i:1">
+            <span class="pc-top"><span class="pc-n">01</span><span class="st st-now">En cours</span></span>
+            <span class="pc-t">Infrastructure complète d'entreprise</span>
+            <span class="pc-d">Une entreprise entière reconstituée : 22 sous-projets.</span>
+            <span class="pc-go">Ouvrir ▸</span>
+          </button></li>
+          <li><button type="button" class="pcard" data-open="pj-2" aria-haspopup="dialog" style="--i:2">
+            <span class="pc-top"><span class="pc-n">02</span><span class="st st-now">En cours</span></span>
+            <span class="pc-t">Jeux vidéo et modélisation assistés par l'IA</span>
+            <span class="pc-d">Créer avec l'IA, sans tout lui déléguer.</span>
+            <span class="pc-go">Ouvrir ▸</span>
+          </button></li>
+          <li><button type="button" class="pcard" data-open="pj-3" aria-haspopup="dialog" style="--i:3">
+            <span class="pc-top"><span class="pc-n">03</span><span class="st st-next">Prévu</span></span>
+            <span class="pc-t">Infrastructure à la maison</span>
+            <span class="pc-d">Transformer mon ancien PC en serveur.</span>
+            <span class="pc-go">Ouvrir ▸</span>
+          </button></li>
+    </ul>
+    
+  </main>
+
+  <dialog class="panel" id="pj-1" aria-label="Infrastructure complète d'entreprise">
+    <div class="pn-bar">
+      <span class="t"><span class="n">01</span>Infrastructure complète d'entreprise</span>
+      <span class="fill" aria-hidden="true"></span>
+      <button type="button" class="btn small" data-close>Fermer ✕</button>
+    </div>
+    <div class="pn-body">
+      <p class="pn-intro"><span class="st st-now">En cours</span> &nbsp;Un projet d'école qui reconstitue l'infrastructure complète d'une entreprise : virtualisation, routage, VLAN, VPN, Wi-Fi, annuaire, services. Réalisé en équipe, suivi avec la méthode Kanban.</p>
+      <div class="bento">
+        <article class="tile"><div class="tx"><h3><span class="k">01</span>Avancement</h3><p class="meter" role="img" aria-label="6 sous-projets terminés, 7 en cours, 9 à faire sur 22"><span class="b-done">██████</span><span class="b-now">▒▒▒▒▒▒▒</span><span class="b-todo">░░░░░░░░░</span></p><p class="legend"><span class="b-done">█</span> 6 terminés · <span class="b-now">▒</span> 7 en cours · <span class="b-todo">░</span> 9 à faire</p></div></article>
+        <article class="tile"><div class="tx"><h3><span class="k">02</span>Méthode Kanban</h3><p>Chaque tâche avance sur un tableau en trois colonnes : à faire, en cours, terminé. Tout le monde voit en un coup d'œil où en est le projet et qui fait quoi. Chaque brique de l'infrastructure est un sous-projet à part entière.</p></div></article>
+        <article class="tile s6"><div class="tx"><h3><span class="k">03</span>Les 22 sous-projets</h3><p>Cliquez sur un sous-projet pour en voir le détail.</p><div class="subd-list"><details class="subd"><summary><span class="sd-t">Proxmox</span><span class="st st-done">Terminé</span><span class="sd-c">Virtualisation</span></summary><div class="sd-b"><p>Proxmox VE est un hyperviseur open source : il fait tourner plusieurs machines virtuelles (et conteneurs) sur un même serveur physique, et se gère depuis une interface web. C'est la base de l'infrastructure : les autres briques tournent dessus.</p><div class="chips"><span class="chip">Proxmox VE</span><span class="chip">KVM</span><span class="chip">LXC</span></div><p class="sd-s">Terminé. Réalisé en équipe, dans le cadre du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Accès Internet pour Proxmox</span><span class="st st-done">Terminé</span><span class="sd-c">Réseau</span></summary><div class="sd-b"><p>Pour installer des mises à jour et des paquets, l'hyperviseur et ses machines virtuelles doivent pouvoir sortir sur Internet : il faut une passerelle, une résolution DNS et des règles qui l'autorisent.</p><div class="chips"><span class="chip">Passerelle</span><span class="chip">DNS</span><span class="chip">Routage</span></div><p class="sd-s">Terminé. Réalisé en équipe, dans le cadre du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Routeur pfSense</span><span class="st st-done">Terminé</span><span class="sd-c">Réseau · Sécurité</span></summary><div class="sd-b"><p>pfSense, basé sur FreeBSD, relie les réseaux entre eux et filtre le trafic avec des règles. Il peut aussi fournir DHCP, NAT et VPN.</p><div class="chips"><span class="chip">pfSense</span><span class="chip">Pare-feu</span><span class="chip">NAT</span></div><p class="sd-s">Terminé. Réalisé en équipe, dans le cadre du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Serveur VPN</span><span class="st st-done">Terminé</span><span class="sd-c">Réseau · Sécurité</span></summary><div class="sd-b"><p>Un VPN crée un tunnel chiffré entre un poste distant et le réseau de l'entreprise : on travaille comme si on y était, sans exposer les services sur Internet.</p><div class="chips"><span class="chip">VPN</span><span class="chip">Chiffrement</span></div><p class="sd-s">Terminé. Réalisé en équipe, dans le cadre du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Réinitialisation des équipements</span><span class="st st-done">Terminé</span><span class="sd-c">Matériel</span></summary><div class="sd-b"><p>Avant de reconfigurer des switchs ou des bornes, on les remet à leur configuration d'usine : plus d'anciens réglages, plus de mauvaises surprises.</p><div class="chips"><span class="chip">Switchs</span><span class="chip">Configuration</span></div><p class="sd-s">Terminé. Réalisé en équipe, dans le cadre du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Problème d'initramfs</span><span class="st st-done">Terminé</span><span class="sd-c">Linux</span></summary><div class="sd-b"><p>L'initramfs est le petit système chargé en mémoire au démarrage de Linux, avant le système principal. S'il est mal généré ou s'il ne trouve pas le disque, la machine reste bloquée : il faut comprendre pourquoi et le reconstruire.</p><div class="chips"><span class="chip">Linux</span><span class="chip">Démarrage</span><span class="chip">Diagnostic</span></div><p class="sd-s">Terminé. Réalisé en équipe, dans le cadre du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Windows Server et Active Directory</span><span class="st st-now">En cours</span><span class="sd-c">Système</span></summary><div class="sd-b"><p>Windows Server fournit les rôles serveur d'une entreprise. Active Directory est l'annuaire central : comptes utilisateurs, groupes, ordinateurs, stratégies de groupe (GPO) et authentification.</p><div class="chips"><span class="chip">Windows Server</span><span class="chip">Active Directory</span><span class="chip">GPO</span></div><p class="sd-s">En cours. Suivi sur le tableau Kanban du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Vaultwarden</span><span class="st st-now">En cours</span><span class="sd-c">Sécurité</span></summary><div class="sd-b"><p>Vaultwarden est un serveur compatible avec les clients Bitwarden : chaque utilisateur a un coffre chiffré pour ses mots de passe, sans dépendre d'un service externe.</p><div class="chips"><span class="chip">Vaultwarden</span><span class="chip">Bitwarden</span><span class="chip">Auto-hébergement</span></div><p class="sd-s">En cours. Suivi sur le tableau Kanban du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Bornes Wi-Fi et portail captif</span><span class="st st-now">En cours</span><span class="sd-c">Réseau</span></summary><div class="sd-b"><p>Des bornes Wi-Fi couvrent les locaux ; un portail captif demande à l'utilisateur de s'authentifier avant de lui donner accès au réseau.</p><div class="chips"><span class="chip">Wi-Fi</span><span class="chip">Portail captif</span></div><p class="sd-s">En cours. Suivi sur le tableau Kanban du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Bloqueur de publicités et cache DNS</span><span class="st st-now">En cours</span><span class="sd-c">Réseau · Services</span></summary><div class="sd-b"><p>Un résolveur DNS local bloque les domaines de publicité et de traçage pour tout le réseau, et garde les réponses en cache pour accélérer la navigation.</p><div class="chips"><span class="chip">DNS</span><span class="chip">Filtrage</span><span class="chip">Cache</span></div><p class="sd-s">En cours. Suivi sur le tableau Kanban du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Inventaire du matériel</span><span class="st st-now">En cours</span><span class="sd-c">Gestion</span></summary><div class="sd-b"><p>Recenser les équipements (type, modèle, emplacement, état) pour connaître le parc et le maintenir à jour : c'est la base d'une gestion de parc.</p><div class="chips"><span class="chip">Parc informatique</span><span class="chip">Documentation</span></div><p class="sd-s">En cours. Suivi sur le tableau Kanban du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">VLAN sur le cœur du réseau</span><span class="st st-now">En cours</span><span class="sd-c">Réseau</span></summary><div class="sd-b"><p>Les VLAN divisent un même réseau physique en plusieurs réseaux logiques (serveurs, utilisateurs, invités…). Le trafic est mieux organisé et une attaque se propage moins facilement.</p><div class="chips"><span class="chip">VLAN</span><span class="chip">Switchs</span><span class="chip">Segmentation</span></div><p class="sd-s">En cours. Suivi sur le tableau Kanban du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Migration des VM dans les bons VLAN</span><span class="st st-now">En cours</span><span class="sd-c">Réseau · Virtualisation</span></summary><div class="sd-b"><p>Chaque machine virtuelle est rattachée au VLAN qui correspond à son rôle, pour que la segmentation prévue s'applique vraiment.</p><div class="chips"><span class="chip">VLAN</span><span class="chip">Proxmox</span><span class="chip">Machines virtuelles</span></div><p class="sd-s">En cours. Suivi sur le tableau Kanban du projet d'infrastructure.</p></div></details><details class="subd"><summary><span class="sd-t">Brassage</span><span class="st st-next">Prévu</span><span class="sd-c">Matériel</span></summary><div class="sd-b"><p>Relier proprement les prises, les équipements et les switchs dans la baie de brassage, avec un câblage ordonné et étiqueté pour intervenir vite en cas de panne.</p><div class="chips"><span class="chip">Baie de brassage</span><span class="chip">Câblage</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">Supervision avec Zabbix</span><span class="st st-next">Prévu</span><span class="sd-c">Supervision</span></summary><div class="sd-b"><p>Zabbix surveille serveurs, équipements et services (disponibilité, charge, espace disque…) et déclenche des alertes quand quelque chose ne va pas.</p><div class="chips"><span class="chip">Zabbix</span><span class="chip">Supervision</span><span class="chip">Alertes</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">Inventaire et ticketing avec GLPI</span><span class="st st-next">Prévu</span><span class="sd-c">Gestion</span></summary><div class="sd-b"><p>GLPI est un logiciel libre de gestion de parc et d'assistance : inventaire du matériel et suivi des tickets (incidents, demandes).</p><div class="chips"><span class="chip">GLPI</span><span class="chip">Ticketing</span><span class="chip">ITSM</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">Serveur FTP avec TrueNAS</span><span class="st st-next">Prévu</span><span class="sd-c">Stockage</span></summary><div class="sd-b"><p>TrueNAS est un système de stockage en réseau : il partage des fichiers (SMB, NFS, FTP) avec gestion des droits et protection des données.</p><div class="chips"><span class="chip">TrueNAS</span><span class="chip">FTP</span><span class="chip">Stockage</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">Serveur HAProxy</span><span class="st st-next">Prévu</span><span class="sd-c">Réseau · Services</span></summary><div class="sd-b"><p>HAProxy répartit les requêtes entre plusieurs serveurs (load balancing) et sert de reverse proxy : meilleure disponibilité et un point d'entrée unique pour les services web.</p><div class="chips"><span class="chip">HAProxy</span><span class="chip">Load balancing</span><span class="chip">Reverse proxy</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">Serveur mail (Postfix, iRedMail)</span><span class="st st-next">Prévu</span><span class="sd-c">Services</span></summary><div class="sd-b"><p>Postfix est un serveur de messagerie (SMTP). iRedMail l'assemble avec les autres briques nécessaires (IMAP, antispam, webmail) pour une messagerie complète.</p><div class="chips"><span class="chip">Postfix</span><span class="chip">iRedMail</span><span class="chip">SMTP · IMAP</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">Serveur web Apache</span><span class="st st-next">Prévu</span><span class="sd-c">Services</span></summary><div class="sd-b"><p>Apache HTTP Server héberge des sites web : hôtes virtuels, HTTPS, gestion des droits.</p><div class="chips"><span class="chip">Apache</span><span class="chip">HTTPS</span><span class="chip">Web</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">LACP entre le serveur et le switch</span><span class="st st-next">Prévu</span><span class="sd-c">Réseau</span></summary><div class="sd-b"><p>LACP (802.3ad) regroupe plusieurs câbles réseau en un seul lien logique : plus de débit, et le service continue si un câble tombe.</p><div class="chips"><span class="chip">LACP</span><span class="chip">802.3ad</span><span class="chip">Redondance</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details><details class="subd"><summary><span class="sd-t">DHCP (ISC) et DNS (bind9) sous Linux</span><span class="st st-next">Prévu</span><span class="sd-c">Réseau · Services</span></summary><div class="sd-b"><p>Le serveur DHCP attribue automatiquement les adresses IP. bind9 est un serveur DNS : il traduit les noms en adresses IP.</p><div class="chips"><span class="chip">ISC DHCP</span><span class="chip">bind9</span><span class="chip">Linux</span></div><p class="sd-s">Prévu. Dans la liste « à faire » du tableau Kanban, pas encore commencé.</p></div></details></div></div></article>
+        <article class="tile s6"><div class="tx"><h3><span class="k">04</span>Technologies</h3><div class="chips"><span class="chip">Proxmox</span><span class="chip">pfSense</span><span class="chip">VLAN</span><span class="chip">VPN</span><span class="chip">Tailscale</span><span class="chip">Active Directory</span><span class="chip">Wi-Fi</span><span class="chip">Windows Server</span><span class="chip">Linux</span><span class="chip">Kanban</span></div></div></article>
+      </div>
+    </div>
+    <div class="pn-foot">
+      <button type="button" class="btn small alt" data-step="-1">◂ Précédent</button>
+      <span style="color:var(--dim)">01 / 03</span>
+      <button type="button" class="btn small alt" data-step="1">Suivant ▸</button>
+    </div>
+  </dialog>
+
+  <dialog class="panel" id="pj-2" aria-label="Jeux vidéo et modélisation assistés par l'IA">
+    <div class="pn-bar">
+      <span class="t"><span class="n">02</span>Jeux vidéo et modélisation assistés par l'IA</span>
+      <span class="fill" aria-hidden="true"></span>
+      <button type="button" class="btn small" data-close>Fermer ✕</button>
+    </div>
+    <div class="pn-body">
+      <p class="pn-intro"><span class="st st-now">En cours</span> &nbsp;Je crée des jeux vidéo et de la modélisation en m'aidant de l'IA, avec l'objectif d'en tirer des revenus.</p>
+      <div class="bento">
+        <article class="tile"><div class="tx"><h3><span class="k">01</span>L'idée</h3><p>Réaliser mes idées de jeux et de modèles 3D sans devenir développeur : l'IA est un outil, pas un remplaçant. Je garde la main sur la conception.</p></div></article>
+        <article class="tile"><div class="tx"><h3><span class="k">02</span>Comprendre l'IA</h3><p>Je m'intéresse à son fonctionnement : comment lui parler (le prompting), comment l'optimiser et comment l'utiliser pour être plus productif.</p></div></article>
+        <article class="tile s6"><figure class="nat"><a href="assets/img/projets/bk-garage.webp" target="_blank" rel="noopener" title="Ouvrir l'image en grand"><img src="assets/img/projets/bk-garage.webp" alt="Menu du garage du jeu : les quatre véhicules avec leurs peintures et leurs livrées" width="1600" height="970" loading="lazy"></a></figure><div class="tx"><h3><span class="k">03</span><span class="redact">██████████</span>, mon jeu Roblox</h3><p><span class="redact">██████████</span> est le jeu Roblox que je développe avec l'aide de l'IA. Ces images montrent ce qu'elle permet de réaliser : un garage complet avec quatre véhicules (Toyama Land Badger, Fjord Hauler 150, Rangeley Warden 3-Door, Lancera Volpe HF), chacun avec ses peintures et ses livrées, et un lobby pour jouer à plusieurs.</p></div></article>
+        <article class="tile"><figure class="nat"><a href="assets/img/projets/bk-avant-apres.webp" target="_blank" rel="noopener" title="Ouvrir l'image en grand"><img src="assets/img/projets/bk-avant-apres.webp" alt="Comparaison avant et après du Toyama Land Badger, sous quatre angles" width="1280" height="1648" loading="lazy"></a></figure><div class="tx"><h3><span class="k">04</span>Des véhicules qui s'affinent</h3><p>Le Toyama Land Badger avant et après une nouvelle version : on itère sur le modèle jusqu'au rendu voulu. L'IA accélère ces allers-retours.</p></div></article>
+        <article class="tile"><figure class="nat"><a href="assets/img/projets/bk-cabines.webp" target="_blank" rel="noopener" title="Ouvrir l'image en grand"><img src="assets/img/projets/bk-cabines.webp" alt="Intérieurs des quatre véhicules, vues conducteur et passager" width="1400" height="1658" loading="lazy"></a></figure><div class="tx"><h3><span class="k">05</span>Des cabines détaillées</h3><p>Les intérieurs des quatre véhicules, côté conducteur et côté passager : volant, compteurs, tableau de bord. Chaque détail compte pour l'immersion.</p></div></article>
+        <article class="tile s6"><figure class="nat"><a href="assets/img/projets/bk-decor.webp" target="_blank" rel="noopener" title="Ouvrir l'image en grand"><img src="assets/img/projets/bk-decor.webp" alt="Décor du jeu : un canoë amarré à un ponton, devant une forêt d'automne" width="1600" height="907" loading="lazy"></a></figure><div class="tx"><h3><span class="k">06</span>Des décors</h3><p>Les environnements du jeu : forêt d'automne, relief, eau et ponton. Un monde à explorer au volant.</p></div></article>
+        <article class="tile s6"><div class="tx"><h3><span class="k">07</span>Technologies</h3><div class="chips"><span class="chip">IA</span><span class="chip">Prompting</span><span class="chip">Roblox</span><span class="chip">Blender</span><span class="chip">Jeux vidéo</span><span class="chip">Modélisation 3D</span><span class="chip">Productivité</span></div></div></article>
+      </div>
+    </div>
+    <div class="pn-foot">
+      <button type="button" class="btn small alt" data-step="-1">◂ Précédent</button>
+      <span style="color:var(--dim)">02 / 03</span>
+      <button type="button" class="btn small alt" data-step="1">Suivant ▸</button>
+    </div>
+  </dialog>
+
+  <dialog class="panel" id="pj-3" aria-label="Infrastructure à la maison">
+    <div class="pn-bar">
+      <span class="t"><span class="n">03</span>Infrastructure à la maison</span>
+      <span class="fill" aria-hidden="true"></span>
+      <button type="button" class="btn small" data-close>Fermer ✕</button>
+    </div>
+    <div class="pn-body">
+      <p class="pn-intro"><span class="st st-next">Prévu</span> &nbsp;Construire chez moi une petite infrastructure, en transformant mon ancien PC en serveur.</p>
+      <div class="bento">
+        <article class="tile s2"><div class="tx"><h3><span class="k">01</span>Un NAS</h3><p>Du stockage en réseau pour centraliser mes fichiers.</p></div></article>
+        <article class="tile s2"><div class="tx"><h3><span class="k">02</span>VPN et domotique</h3><p>Une connexion VPN vers le serveur pour accéder à Home Assistant à distance et faire de la domotique.</p></div></article>
+        <article class="tile s2"><div class="tx"><h3><span class="k">03</span>Serveurs de jeu</h3><p>Héberger des serveurs de jeu sur le même serveur.</p></div></article>
+        <article class="tile s6"><div class="tx"><h3><span class="k">04</span>Technologies</h3><div class="chips"><span class="chip">NAS</span><span class="chip">VPN</span><span class="chip">Home Assistant</span><span class="chip">Domotique</span><span class="chip">Serveur de jeu</span></div></div></article>
+      </div>
+    </div>
+    <div class="pn-foot">
+      <button type="button" class="btn small alt" data-step="-1">◂ Précédent</button>
+      <span style="color:var(--dim)">03 / 03</span>
+      <button type="button" class="btn small alt" data-step="1">Suivant ▸</button>
+    </div>
+  </dialog>
+
+  <footer class="foot">
+    <div class="row"><span class="fill dbl" aria-hidden="true"></span><span class="lbl">CRÉDITS</span><span class="fill dbl" aria-hidden="true"></span></div>
+    <dl class="kv">
+      <div><dt>Conception &amp; contenu</dt><dd>Alex Martin</dd></div>
+      <div><dt>Police</dt><dd><a href="https://www.jetbrains.com/lp/mono/" rel="noopener">JetBrains Mono</a> (licence OFL 1.1)</dd></div>
+      <div><dt>Art ASCII du nom</dt><dd><a href="https://github.com/cmatsuoka/figlet" rel="noopener">figlet</a>, police « ANSI Regular »</dd></div>
+      <div><dt>Technologies</dt><dd>HTML, CSS, JavaScript — sans framework</dd></div>
+      <div><dt>Hébergement</dt><dd>GitHub Pages</dd></div>
+    </dl>
+    <div class="bottom">
+      <span>© 2026 Alex Martin — BTS SIO option SISR</span>
+      <span class="links">
+        <a class="btn small alt" href="rgpd.html">RGPD &amp; mentions légales</a>
+        <a href="#top">↑ haut de page</a>
+      </span>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

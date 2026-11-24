@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille technologique — Alex Martin</title>
+<meta name="description" content="Veille technologique : pratique bimensuelle, source IT-Connect et exemple concret (AnyDesk, 2024).">
+<meta name="theme-color" content="#050805">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/JetBrainsMonoNL-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="top">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="index.html" aria-label="Alex Martin — accueil">ALEX MARTIN<span class="us">_</span></a>
+    <span class="fill" aria-hidden="true"></span>
+    <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html"><span class="num">01</span>Accueil</a>
+        <a href="projets.html"><span class="num">02</span>Projets</a>
+        <a href="veille.html" aria-current="page"><span class="num">03</span>Veille</a>
+        <a href="interets.html"><span class="num">04</span>Intérêts</a>
+        <a href="contact.html"><span class="num">05</span>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="sheet">
+  <main id="contenu">
+    <h1 class="page-title"><span class="pfx" aria-hidden="true">//</span><span>Veille technologique</span><span class="fill dbl" aria-hidden="true"></span></h1>
+    <p class="kicker">Suivre les failles et les mises à jour qui touchent les outils que j'utilise, pour réagir avant qu'elles ne deviennent un problème.</p>
+
+    <section class="split" aria-labelledby="pratique">
+      <div class="side"><h2 id="pratique"><span class="n">01</span><span class="t">Ma pratique</span></h2><p>Comment je m'informe</p></div>
+      <div class="body">
+        <div class="prose">
+          <p>Je pratique la veille technologique deux fois par mois. Je lis IT-Connect pour me tenir au courant des grosses failles de sécurité et des mises à jour importantes.</p>
+          <p>Je ne retiens que ce qui me concerne : les logiciels et les systèmes que j'utilise, au travail comme à l'école. Quand une annonce touche l'un d'eux, je regarde ce qu'il faut faire et je m'en occupe ou je le signale.</p>
+        </div>
+        <dl class="facts">
+          <dt>Rythme</dt><dd>2 fois par mois</dd>
+          <dt>Source</dt><dd>IT-Connect</dd>
+          <dt>Ce que je cherche</dt><dd>Les grosses failles de sécurité et les mises à jour importantes</dd>
+          <dt>Comment je trie</dt><dd>Je ne retiens que ce qui touche les outils que j'utilise</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="split" aria-labelledby="source">
+      <div class="side"><h2 id="source"><span class="n">02</span><span class="t">Ma source</span></h2><p>Ce que je lis</p></div>
+      <div class="body">
+        <div class="prose">
+          <p><strong>IT-Connect</strong> est un site francophone d'actualités et de tutoriels sur les systèmes, les réseaux et la cybersécurité. C'est là que je repère les alertes importantes : vulnérabilités critiques, attaques en cours, mises à jour de Windows, de Linux ou des hyperviseurs.</p>
+        </div>
+        <div class="actions" style="margin-top:1.4rem">
+          <a class="btn alt" href="https://www.it-connect.fr/" target="_blank" rel="noopener">Ouvrir IT-Connect <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="split" aria-labelledby="exemple">
+      <div class="side"><h2 id="exemple"><span class="n">03</span><span class="t">Exemple concret</span></h2><p>AnyDesk, février 2024</p></div>
+      <div class="body">
+        <dl class="facts">
+          <dt>Date</dt><dd>2 février 2024</dd>
+          <dt>Outil concerné</dt><dd>AnyDesk, logiciel de prise de main à distance</dd>
+          <dt>Événement</dt><dd>AnyDesk annonce que des pirates ont compromis ses serveurs de production</dd>
+          <dt>Réponse de l'éditeur</dt><dd>Certificats de sécurité révoqués, mots de passe de son portail réinitialisés, nouvelle version signée avec un nouveau certificat</dd>
+          <dt>Chez moi</dt><dd>Tous les postes équipés d'AnyDesk ont été réinitialisés</dd>
+        </dl>
+        <div class="prose" style="margin-top:1.6rem">
+          <p>Au travail, j'étais amené à utiliser AnyDesk. Un outil de prise de main à distance donne un accès complet au poste : si l'éditeur est compromis, on ne peut plus lui faire confiance. AnyDesk indiquait n'avoir aucune preuve que des postes d'utilisateurs aient été touchés, mais, par précaution, tous les postes équipés ont été remis à zéro.</p>
+          <p><strong>Ce que j'en retiens :</strong> savoir où un outil d'accès à distance est déployé, suivre les annonces de son éditeur et pouvoir réinitialiser rapidement ses accès.</p>
+        </div>
+        <p class="srcs">Sources :
+          <a href="https://www.it-connect.fr/cyberattaque-anydesk-des-pirates-ont-compromis-les-serveurs-de-production/" target="_blank" rel="noopener">IT-Connect</a> ·
+          <a href="https://anydesk.com/en/public-statement-2-2-2024" target="_blank" rel="noopener">communiqué d'AnyDesk</a> ·
+          <a href="https://www.techcrunch.com/2024/02/05/remote-access-giant-anydesk-resets-passwords-and-revokes-certificates-after-hack" target="_blank" rel="noopener">TechCrunch</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="row"><span class="fill dbl" aria-hidden="true"></span><span class="lbl">CRÉDITS</span><span class="fill dbl" aria-hidden="true"></span></div>
+    <dl class="kv">
+      <div><dt>Conception &amp; contenu</dt><dd>Alex Martin</dd></div>
+      <div><dt>Police</dt><dd><a href="https://www.jetbrains.com/lp/mono/" rel="noopener">JetBrains Mono</a> (licence OFL 1.1)</dd></div>
+      <div><dt>Art ASCII du nom</dt><dd><a href="https://github.com/cmatsuoka/figlet" rel="noopener">figlet</a>, police « ANSI Regular »</dd></div>
+      <div><dt>Technologies</dt><dd>HTML, CSS, JavaScript — sans framework</dd></div>
+      <div><dt>Hébergement</dt><dd>GitHub Pages</dd></div>
+    </dl>
+    <div class="bottom">
+      <span>© 2026 Alex Martin — BTS SIO option SISR</span>
+      <span class="links">
+        <a class="btn small alt" href="rgpd.html">RGPD &amp; mentions légales</a>
+        <a href="#top">↑ haut de page</a>
+      </span>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
